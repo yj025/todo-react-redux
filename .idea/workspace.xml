@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="859f4206-1e90-4f4a-970a-4559937428c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AddTodo/AddTodo.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AddTodo/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Todo/Todo.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Todo/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TodosList/TodosList.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TodosList/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Todos/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/global.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/CloseIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/App/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +52,14 @@
       <updated>1681652707230</updated>
       <workItem from="1681652708586" duration="372000" />
     </task>
+    <task id="LOCAL-00001" summary="add view component: todo list and add todo">
+      <created>1681658243406</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681658243406</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,5 +75,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add view component: todo list and add todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add view component: todo list and add todo" />
   </component>
 </project>
