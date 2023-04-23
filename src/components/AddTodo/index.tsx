@@ -60,7 +60,7 @@ const AddTodo: React.FC = () => {
                             <Button
                                 className={style.closeModalButton}
                                 icon={<CloseOutlined/>}
-                                shape="circle-outline"
+                                shape="circle"
                                 onClick={toggleModalVisible}
                             />
                         </div>
@@ -110,7 +110,7 @@ const AddTodo: React.FC = () => {
                                     tooltipVisible={false}
                                     value={todoPriority}
                                     defaultValue={todoPriority}
-                                    onChange={(value => changeTodoPriority(value as number))}
+                                    onChange={(value: number): void => changeTodoPriority(value)}
                                 />
                                 )}
                         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from '@ant-design/icons';
+import {CloseOutlined} from '@ant-design/icons';
 
 const CloseSvg = () => (
     <svg viewBox="0 0 1024 1024" width="16" height="16">
@@ -24,7 +24,8 @@ const CloseSvg = () => (
 );
 
 const CloseIcon = (props: any) => (
-    <Icon component={CloseSvg} {...props} />
+    <CloseOutlined component={CloseSvg} {...props}  />
+    // <CloseOutlined component={CloseSvg} {...props} />
 );
 
 export default CloseIcon;
