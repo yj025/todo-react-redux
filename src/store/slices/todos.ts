@@ -23,7 +23,7 @@ export const slice = createSlice({
           {
             id,
             changes: {completed: !todo.completed}
-          })
+          });
       }
       
     },

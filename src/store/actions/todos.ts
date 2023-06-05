@@ -7,7 +7,7 @@ export const fetchTodos = (): AppThunk => async ( dispatch: AppDispatch ) => {
     try {
         const todos = await TodosApi.fetchTodos();
 
-        dispatch(todosActions.setTodos(todos))
+        dispatch(todosActions.setTodos(todos));
     } catch(error) {
         throw error;
     }
@@ -20,7 +20,7 @@ export const addTodo = (todo: TodosApi.TodoCreationProps): AppThunk => async ( d
             id,
             completed: false,
             ...todo,
-        }
+        };
 
         dispatch(todosActions.addTodo(finalTodo));
     } catch(error) {
@@ -56,4 +56,4 @@ export const toggleTodo = (id: TodosApi.TodoId) => async ( dispatch: AppDispatch
     } catch(error) {
         throw error;
     }
-}
+};

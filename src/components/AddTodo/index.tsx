@@ -13,28 +13,28 @@ const AddTodo: React.FC = () => {
 
     const [todoContent, setTodoContent] = useState('');
     const [todoLabels, setTodoLabels] = useState([] as string[]);
-    const [addTodoLabelInput, setAddTodoLabelInput] = useState('')
+    const [addTodoLabelInput, setAddTodoLabelInput] = useState('');
     const [todoPriority, setTodoPriority] = useState(1);
 
     useEffect(() => {
-        console.log('content ' + todoContent)
-        console.log('labels ' + todoLabels)
-        console.log('priority ' + todoPriority)
+        console.log('content ' + todoContent);
+        console.log('labels ' + todoLabels);
+        console.log('priority ' + todoPriority);
     });
 
     const toggleModalVisible = (): void => {
         document.body.style.overflow = modalVisible ? 'unset' : 'hidden';
-        setModalVisibility(!modalVisible)
+        setModalVisibility(!modalVisible);
     };
 
-    const changeTodoContent = (e: React.FormEvent<HTMLInputElement>): void => setTodoContent(e.currentTarget.value)
-    const changeTodoLabels = (values: string[]): void => setTodoLabels(values)
-    const changeAddTodoLabelInput = (e: React.FormEvent<HTMLInputElement>): void => setAddTodoLabelInput(e.currentTarget.value)
-    const changeTodoPriority = (value: number): void => setTodoPriority(value)
+    const changeTodoContent = (e: React.FormEvent<HTMLInputElement>): void => setTodoContent(e.currentTarget.value);
+    const changeTodoLabels = (values: string[]): void => setTodoLabels(values);
+    const changeAddTodoLabelInput = (e: React.FormEvent<HTMLInputElement>): void => setAddTodoLabelInput(e.currentTarget.value);
+    const changeTodoPriority = (value: number): void => setTodoPriority(value);
 
     const doFieldsValidate = (): boolean => {
         return todoContent != '';
-    }
+    };
 
     const todoPrioritySliderOptions: SliderMarks = {
         0: 'None',
@@ -47,7 +47,7 @@ const AddTodo: React.FC = () => {
         <div className={style.inputGroup}>
             <Typography.Text className={style.inputTitle}>{title}</Typography.Text>
             {inputItem}
-        </div>
+        </div>;
 
     return (
         <React.Fragment>
@@ -91,9 +91,9 @@ const AddTodo: React.FC = () => {
                                                     value={addTodoLabelInput}
                                                     onChange={changeAddTodoLabelInput}
                                                 />
-                                                <a className={style.addTodoLabelButton}>
+                                                <button className={style.addTodoLabelButton}>
                                                     <PlusOutlined /> Add Label
-                                                </a>
+                                                </button>
                                             </div>
                                         </div>
                                     )}
@@ -135,7 +135,7 @@ const AddTodo: React.FC = () => {
                 />
             </div>
         </React.Fragment>
-    )
-}
+    );
+};
 
 export default AddTodo;

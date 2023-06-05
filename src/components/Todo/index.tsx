@@ -27,7 +27,7 @@ const Todo: React.FC<TodoProps> = ({content, category, priority}) => {
                 <Tag color={"blue"}>{priority}</Tag>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Todo;

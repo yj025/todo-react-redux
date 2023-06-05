@@ -9,7 +9,7 @@ const Todos: React.FC = () => {
             <TodosList todos={todos}/>
             <AddTodo/>
         </React.Fragment>
-    )
-}
+    );
+};
 
 export default Todos;

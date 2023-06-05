@@ -23,7 +23,7 @@ const TodosList: React.FC<TodosListProps> = ({todos}) => {
                 renderItem={item => <div className={style.todoContainer}><Todo completed content={item[0]} category={item[1]} priority={item[2]}/></div>}
             />
         </div>
-    )
-}
+    );
+};
 
 export default TodosList;

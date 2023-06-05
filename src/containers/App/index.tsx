@@ -7,7 +7,7 @@ const App: React.FC = () => {
         <div>
             <Todos/>
         </div>
-    )
-}
+    );
+};
 
 export default App;
